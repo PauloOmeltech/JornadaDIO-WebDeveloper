@@ -8,19 +8,18 @@
 <body>
     <h1>Exercício 01 - Tags Básicas</h1>
     <hr/>
-    <h2>Índice</h2>
+    <h2 id="inicio">Índice</h2>
 
     <ul>
         <li><a href="#cabecalhos">Cabeçalhos</a></li>
         <li><a href="#paragrafos">Parágrafos</a></li>
         <li><a href="#listas">Listas Ordenadas e não ordenadas</a></li>
-        <li><a href="#links">Links</a></li>
+        <li><a href="#links">Links e ancoragem</a></li>
         <li><a href="#atributos">Atributos</a></li>
-        <li><a href="#ancoragem">Ancoragem</a></li>
         <li><a href="#referencias">Referências</a></li>
     </ul>
 
-    <h2 id="cabecalhos">Cabeçalhos H1 até H6</h2>
+    <h2 id="cabecalhos"><u>Cabeçalhos H1 até H6</u></h2>
     <p>Os cabeçalhos servem para criar títulos e subtítulos na página. O h1 é o título principal, sendo o tamanho maior e geralmente usado para títulos e seções mais importantes. Eles não servem só para mudar o tamanho, mas também ajudam o Google e os leitores de tela a entenderem a estrutura da página, tipo um sumário. 
     Os diferentes tamanhos estão no exemplo abaixo:
     </p>
@@ -31,12 +30,80 @@
     <h4>Cabeçalho no tamanho H4</h4>
     <h5>Cabeçalho no tamanho H5</h5>
     <h6>Cabeçalho no tamanho H6</h6>
+<a href="#inicio"><h6>voltar</h6></a>    
 
 <hr />
 
-<h2 id="paragrafos">Parágrafos</h2>
-    <p>Os parágrafos são feitos com a tag &lt;p&gt;. Tudo que vamos escrever em texto normal vai dentro dela. O navegador automaticamente dá um espaço antes e depois do parágrafo, deixando o texto bem organizado e fácil de ler.
+<h2 id="paragrafos"><u>Parágrafos</u></h2>
+    <p>Os parágrafos são feitos com a tag <b>&lt;p&gt;</b>. Tudo que vamos escrever em texto normal vai dentro dela. O navegador automaticamente dá um espaço antes e depois do parágrafo, deixando o texto bem organizado e fácil de ler.
     </p>
-    
+<a href="#inicio"><h6>voltar</h6></a>
+
+<hr />
+
+<h2 id="listas"><u>Listas ordenadas e não ordenadas</u></h2>
+    <p>Existem dois tipos principais de lista:<br></p>
+    <ul>
+        <li>Lista ordenada: Criada com a tag <b>&ltol&gt</b>.<br> Coloca números automaticamente. Perfeita quando a ordem importa, tipo um passo a passo.</li><br>
+        <li>Lista não ordenada: Criada com a tag <b>&ltul&gt</b>.<br> Usa marcadores como bolinhas ou quadradinhos. É boa para listas simples, tipo ingredientes de uma receita.</li>
+    </ul>
+    <p>Em ambas, cada item da lista é feito com a tag <b>&ltli&gt</b>.</p>
+<a href="#inicio"><h6>voltar</h6></a>
+
+<hr />
+
+<h2 id="links"><u>Links</u></h2>
+    <p>O link é feito com a tag <b>&lta&gt</b>. Seguido pelo atributo `href`, onde colocamos o endereço do site para onde o link vai.<br> 
+Exemplo: <a href="https://google.com">Clique aqui</a>.<br> 
+Ao clicar no texto, vamos para o site do Google. Permitindo a navegação dentro do seu próprio site ou para páginas externas.
+</p>
+<h2>Tipos de links</h2>
+<h3>Links externos:</h3>
+<p>
+    São aqueles que levam para outro site, devemos colocar o endereço completo da página para onde o link vai. Como no exemplo acima.
+</p>
+<h3>Links internos (navegação dentro da própria página):</h3>
+<p>A navegação interna de um site é chamada de ancoragem. Colocamos um identificador (id) em alguma parte da página e criamos um link apontando para ele usando o símbolo de hashtag `#`.<br>
+Exemplo: <a href="#sobre">Ir para a seção Sobre.</a><br> Ao clicar, a página rola sozinha até aquela parte, que deve estar com o id igual ao de seu link.<br>É muito útil em páginas longas, tipo currículos ou artigos grandes.</p>
+
+<h3>Link para e-mail:</h3>
+<p>Dentro do atributo href colocamos o comando “mailto:” seguido do endereço de e-mail após os dois pontos, ao clicar abrimos o programa de e-mail padrão.
+<a href="mailto:meuemail@email.com">Enviar e-mail</a>
+</p>
+
+<h3>Link para telefone:</h3>
+<p>Dentro do atributo href colocamos o comando “tel:” seguido pelo número de telefone após os dois pontos, geralmente usado em seções de contatos. Exemplo:
+<a href="tel:11999999999">Ligar agora</a></p>
+
+<h3>Abrir link em uma nova aba:</h3>
+<p>Para não fechar a página atual quando a pessoa clica, adicionamos o atributo <b>target="_blank"</b>.<br> 
+Exemplo: <a href="https://www.google.com" target="_blank">Abrir Google em nova aba</a><br>
+Geralmente é usado quando o link direciona para outro site e para o usuário não sair da página atual ao clicar em algum link.
+</p>
+<a href="#inicio"><h6>voltar</h6></a>
+
+<hr>
+
+<h2 id="atributos"><u>Atributos</u></h2>
+<p>Atributos são informações extras colocadas nas tags HTML para dar mais detalhes. Eles sempre vão no formato `nome="valor"`.<br>Por exemplo, no link usamos `href="url"`, em uma imagem usamos `src="foto.jpg"` e `alt="descrição"`.<br>
+    Os atributos mudam o comportamento ou dão mais informações para uma tag.</p>
+<a href="#inicio"><h6>voltar</h6></a>
+
+<hr>
+
+<h2 id="referencias"><u>Referências</u></h2>
+<p>
+    <a href="https://www.youtube.com/watch?v=SLf6FUNymxc">
+    Curso de HTML - Aprenda HTML em 1 Hora
+    </a><p>Explica estrutura, cabeçalhos, parágrafos, listas, links e âncoras de forma direta.</p>
+</p>
+
+<p>
+    <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY">
+    Links e Âncoras em HTML5 - Curso em Vídeo do Gustavo Guanabara
+    </a><p>Foco em links externos, internos, target="_blank" e ancoragem.</p>
+</p>
+<a href="#inicio"><h6>voltar</h6></a>
+
 </body>
 </html>
